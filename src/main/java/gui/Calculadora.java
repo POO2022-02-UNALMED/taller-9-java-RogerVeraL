@@ -8,18 +8,18 @@ import javafx.stage.Stage;
 public class Calculadora extends Application  {
 	
 	public static void main(String args[]){ 
-	      ***(args); 
+	      launch(args); SS
 	} 
 	
 	@Override
 	public void start(Stage window) throws Exception {
 		*** vb = new VBox();
-		window.setTitle(***);
+		window.setTitle("CALCULADORA");
 		
 		vb.getChildren().add(new Calculator());
-		Scene sc = new Scene(***, 270, 270);
-		window.setScene(***);
-		***.show();
+		Scene sc = new Scene(vb, 270, 270);
+		window.setScene(sc);
+		window.show();
 	}
 	
 }
